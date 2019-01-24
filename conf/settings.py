@@ -18,7 +18,7 @@ BASE_DIR = os.path.dirname(os.path.dirname(os.path.abspath(__file__)))
 
 # ======== STATIC FILE CONFIGURATION
 # See: https://docs.djangoproject.com/en/dev/ref/settings/#static-root
-STATIC_ROOT = os.normpath(os.join(BASE_DIR, 'staticfiles'))
+STATIC_ROOT = os.path.normpath(os.path.join(BASE_DIR, 'staticfiles'))
 
 # See: https://docs.djangoproject.com/en/dev/ref/settings/#static-url
 STATIC_URL = '/static/'
@@ -41,8 +41,8 @@ SECRET_KEY = '(e91#w+&rb-!__#div#q^isu==_i@c)23u^cvd2*r^i*9r_zq2'
 DEBUG = True
 
 ALLOWED_HOSTS = [
-    'localhost'
-    'glacial-inlet-28339.herokuapp.com'
+    'localhost',
+    'glacial-inlet-28339.herokuapp.com',
 ]
 
 
